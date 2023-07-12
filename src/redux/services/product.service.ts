@@ -4,13 +4,14 @@ import type { Product } from "../../models/product.model";
 
 const api = createApi({
   reducerPath: "productApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "https://fakestoreapi.com/" }),
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_APP_URL_API }),
   endpoints: (builder) => ({
     getProducts: builder.query<Product[], string>({
       query: (queryString) => ({
         url: `/products?${queryString}`,
         method: "GET",
-      })
+      }),
     }),
   }),
 });
