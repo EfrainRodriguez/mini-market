@@ -1,0 +1,38 @@
+.add-remove-button-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.add-remove-button-wrapper button {
+  width: 40px;
+  height: 40px;
+  border-radius: 0px;
+  padding: 0;
+  border: 1px solid transparent;
+  font-size: 2em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-remove-button-wrapper button svg {
+  margin: 0;
+}
+
+.add-remove-button-wrapper .add-button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.add-remove-button-wrapper .remove-button:hover {
+  background-color: #c1c1c1;
+}
+
+.add-remove-button-wrapper .add-button {
+  background-color: var(--color-primary);
+}
+
+.add-remove-button-wrapper .remove-button {
+  color: #000;
+  background-color: #f9f9f9;
+}

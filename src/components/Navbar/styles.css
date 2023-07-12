@@ -1,0 +1,35 @@
+nav {
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #CECECE;
+  height: var(--mobile-navbar-height);
+}
+
+.nav-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  padding: 0px 16px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--lg-breakpoint);
+}
+
+.brand-link {
+  color: #000;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+  letter-spacing: 0.25rem;
+}
+
+@media screen and (min-width: 960px) {
+  nav {
+    height: var(--desktop-navbar-height);
+  }
+}

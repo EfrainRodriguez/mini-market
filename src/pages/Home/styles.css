@@ -1,0 +1,44 @@
+.app-container {
+  padding: 32px 16px;
+  max-width: var(--lg-breakpoint);
+  margin: var(--mobile-navbar-height) auto 0px;
+}
+
+.app-grid {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 1fr;
+}
+
+.app-grid-col {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.store-col {
+  order: 2;
+}
+
+.cart-col {
+  order: 1;
+}
+
+@media screen and (min-width: 960px) {
+  .app-container {
+    margin: var(--desktop-navbar-height) auto 0px;
+  }
+
+  .app-grid {
+    grid-gap: 32px;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .store-col {
+    order: 1;
+  }
+
+  .cart-col {
+    order: 2;
+  }
+}
