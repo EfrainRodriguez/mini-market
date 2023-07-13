@@ -17,12 +17,12 @@ jobs:
       - name: Install Yarn
         run: npm install -g yarn
       - name: Install dependencies
-        run: yarn install
-      - name: Run tests
+        run: yarn
+      - name: Execute tests
         run: yarn test
       - name: Build Mini-Market App
         run: yarn build
       - name: Install Surge
         run: npm install --global surge
       - name: Run surge
-        run: surge ./dist ${{env.SURGE_URL}} --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./dist ${{ vars.SURGE_URL }} --token ${{ secrets.SURGE_TOKEN }}
