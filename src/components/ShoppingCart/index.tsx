@@ -57,7 +57,10 @@ const ShoppingCart = () => {
             className="shopping-cart-item-wrapper"
             onClick={() => handleClick(item)}
           >
-            <div className="shopping-cart-item">
+            <div
+              className="shopping-cart-item"
+              data-testid="shopping-cart-item"
+            >
               <Chip label={item.quantity} className="shopping-cart-item-chip" />
               <div className="shopping-cart-item-img">
                 <img src={item.image} alt={item.title} />

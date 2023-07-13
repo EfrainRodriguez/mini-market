@@ -15,7 +15,13 @@ const ProductDetails = () => {
 
   const renderQuantityChip = () => {
     const item = cartItems.find((item) => item.id === selectedProduct?.id);
-    return <Chip label={item?.quantity || 0} className="product-list-chip" />
+    return (
+      <Chip
+        data-testid="product-details-chip"
+        label={item?.quantity || 0}
+        className="product-list-chip"
+      />
+    );
   };
 
   const handleAdd = () => {

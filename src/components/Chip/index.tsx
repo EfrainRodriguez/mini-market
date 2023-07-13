@@ -5,8 +5,8 @@ interface ChipProps {
   className?: string;
 }
 
-const Chip = ({ label, className = "" }: ChipProps) => {
-  return <div className={`chip ${className}`}>{label}</div>;
+const Chip = ({ label, className = "", ...rest }: ChipProps) => {
+  return <div className={`chip ${className}`} {...rest}>{label}</div>;
 };
 
 export default Chip;

@@ -13,10 +13,10 @@ const AddRemoveButton = ({
 }: AddRemoveButtonProps) => {
   return (
     <div className="add-remove-button-wrapper">
-      <button className="remove-button" onClick={onRemove}>
+      <button data-testid="remove-cart-item-button" className="remove-button" onClick={onRemove}>
         <MdRemove />
       </button>
-      <button className="add-button" onClick={onAdd}>
+      <button data-testid="add-cart-item-button" className="add-button" onClick={onAdd}>
         <MdAdd />
       </button>
     </div>
